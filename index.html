@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="p-4 bg-gray-800 text-white font-bold text-2xl">
+      Books Library Using googleapis Api
+    </h1>
+    <div class="mt-20">
+      <h2>Search for what You like to read</h2>
+      <form>
+        <input
+          class="border-2 bg-blue-100 w-64"
+          placeholder="Please Type book title or Author"
+        />
+        <button
+          class="bg-gray-800 text-white p-2 rounded-md mt-2 w-24"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <hr class="mt-10" />
+    <div class="flex-col">
+      <h2
+        class="p-4 justify-center items-center text-center text-2xl font-bold"
+      >
+        choose from our favorits Books
+      </h2>
+      <div
+        id="booksCountiner"
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4"
+      ></div>
+    </div>
+  </body>
+</html>
